@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>Buscador de Repositórios do GitHub</h1>
+        <p>Encontre repositórios no GitHub por termos de pesquisa.</p>
+    </header>
+
+    <main>
+        <!-- Formulário de Pesquisa -->
+        <section id="search-section">
+            <form id="search-form">
+                <input type="text" id="search-input" placeholder="Digite o termo de pesquisa" required>
+                <button type="submit" id="search-button">Buscar</button>
+            </form>
+        </section>
+
+        <!-- Área de Resultados -->
+        <section id="results-section">
+            <ul id="results-list">
+                <li>
+                    <h3><a href="URL_DO_REPOSITORIO" target="_blank"></a></h3>
+                    <p></p>
+                    <button class="view-details" data-repo='{"..."}'>Ver detalhes</button>
+                </li>
+
+            </ul>
+        </section>
+    </main>
+
+    <!-- Modal para Detalhes do Repositório (Opcional) -->
+    <div id="repo-details-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" id="close-modal">&times;</span>
+            <h2 id="repo-name"></h2>
+            <p id="repo-description"></p>
+            <a id="repo-url" href="#" target="_blank">Visitar Repositório</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script> <!-- Link para o arquivo JavaScript -->
+</body>
+
+</html>
